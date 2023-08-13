@@ -3,7 +3,7 @@ import $ from "jquery";
 
 window.onload = async () => {
   mermaid.initialize({ startOnLoad: false });
-  console.log("動いたよ");
+  console.log("動いたよ!!");
   await convertToMermaidText();
   await convertToMarmeidSvg();
 };
