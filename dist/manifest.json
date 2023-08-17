@@ -5,7 +5,7 @@
   "manifest_version": 3,
   "content_scripts": [
     {
-      "matches": ["http://localhost:3000/*"],
+      "matches": ["https://*.backlog.jp/*"],
       "js": ["js/script.js"]
     }
   ]

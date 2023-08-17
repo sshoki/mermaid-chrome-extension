@@ -8,7 +8,7 @@ window.onload = async () => {
   await convertToMarmeidSvg();
 };
 
-const targetClassName = ".lang-mermaid";
+const targetClassName = ".loom_code";
 
 // Github用のテスト
 const targetTagFprGoithub = "pre[lang='mermaid']";
