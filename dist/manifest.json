@@ -3,6 +3,10 @@
   "description": "マーメイドを適用させる",
   "version": "1.0.0",
   "manifest_version": 3,
+  "action": {
+    "default_title": "Mermaid",
+    "default_popup": "popup.html"
+  },
   "content_scripts": [
     {
       "matches": ["https://*.backlog.jp/*"],

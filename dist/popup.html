@@ -4,43 +4,37 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" type="text/css" href="popup.css" />
     <style>
-      body {
-        background-color: #00ff00;
-      }
+      #target{
+  width: 400px;
+  height: 300px;
+  font-size: 16px;
+  background-color: #ffffc4;
+  border: 0;
+}
 
-      .container {
-        width: 90%;
-        text-align: center;
-      }
+.mermaid-box{
+  width: 500px;
+  height: 400px;
 
-      .first-sentence {
-        font-weight: bold;
-      }
+}
 
-      .lang-marmeid {
-        height: 200px;
-        width: 200px;
-      }
 
-      .mermaid {
-        height: 190px;
-        width: 190px;
-      }
+/*ボタンを押したとき*/
+input:active {
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+  border-bottom: none;
+}
     </style>
   </head>
   <body>
     <section>
-      <pre class="lang-marmeid loom-code">
-          <code>
-            <span>graph TD</span>
-            <span>;</span>
-            <span>A</span>
-            <span>--></span>
-            <span>B</span>
-            <span>;</span>
-          </code>
-        </pre>
+      <div class="mermaid-box">
+        <div id='target'></div>
+      </div>
+      <input type='button' id='copy' value='選択範囲をコピー'>
     </section>
-    <script src="js/script.js"></script>
+    <script src="js/popup.js"></script>
   </body>
 </html>
